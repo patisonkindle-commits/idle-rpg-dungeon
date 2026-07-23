@@ -6,9 +6,11 @@ export class LoadingScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('bg', 'assets/bg.png');
-        this.load.image('hero', 'assets/hero.png');
-        this.load.image('enemy', 'assets/enemy.png');
+        // No external assets needed — everything is procedural
+        const loadingText = this.add.text(400, 480, 'Loading...', {
+            fontSize: '24px',
+            color: '#ffffff'
+        }).setOrigin(0.5);
     }
 
     create() {
