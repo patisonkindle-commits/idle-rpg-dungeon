@@ -1,6 +1,0 @@
-node_modules/
-dist/
-android/
-capacitor-cordova-android-plugins/
-*.log
-.DS_Store
